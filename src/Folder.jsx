@@ -75,7 +75,14 @@ console.log(value)
       </div>
     );
   } else {
-    return <div className="file">📄 {explorer.name}</div>;
+    // return <div className="file">📄 {explorer.name}</div>;
+    return <div>
+      <span>
+        📄 {explorer.name}
+  <button onClick={() => deleteFodler()} style={{marginRight:5,marginLeft:5}}>♻️</button>
+  <button onClick={() => editname()}>edit</button>
+      </span>
+    </div>
   }
 }
 
